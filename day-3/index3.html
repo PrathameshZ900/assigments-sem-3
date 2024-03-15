@@ -35,14 +35,14 @@
         }
         #APPLY:hover{
             color: green;
-            background-color: antiquewhite;
+            background-color: rgb(104, 252, 255);
         }
         nav {
             
             background-color: #ffffff;
             padding: 10px;
             border-bottom:1px solid balck;
-            border-bottom: 1px solid black;
+            border-bottom: 0.5px solid rgb(216, 216, 216);
         }
         
         nav > div {
@@ -86,8 +86,8 @@
 
         }
         .redbtn:hover{
-            color: rgb(100, 181, 235);
-            border: 2px solid rgb(124, 232, 254);
+            color: rgb(158, 255, 98);
+            border: 2px solid rgb(158, 255, 98);
         }
         button{
             margin: 10px;
@@ -104,7 +104,68 @@
             background: rgb(229,254,255);
             border: 1px solid rgb(110,113,204);
         }
+        #ref:hover{
+            color: rgb(255, 27, 27);
+            background: rgb(229,254,255);
+            border: 1px solid rgb(236, 59, 19);
+        }
 
+        #contant{
+            /* border: 2px solid black; */
+            padding: 40px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        
+        #contant>div{
+            width: 100%;
+           
+        }
+        #vid{
+            width: 100%;
+            border-radius:20px ;
+        }
+       h1{
+        color: rgb(178, 123, 255);
+        font-size: 60px;
+        word-spacing: 0.1em; /* Adjust this value as needed */
+       }
+       #app{
+        color: #ffffff;
+        background-color: rgb(255, 61, 61);
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        height: 40px;
+        border-radius: 10px;
+        border: 0px;
+       }
+       #foot{
+        background-color: rgb(94, 121, 255) ;
+        color: antiquewhite;
+        text-align: center;
+        padding: 20px;
+       }
+       #foot>h1{
+        color: aliceblue;
+        font-size: 40px;
+        word-spacing: 0em;
+       }
+       #placed{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:rgb(94, 121, 255) ;
+        color: aliceblue;
+       }
+       #placed>div>h1{
+        color: #ffffff;
+       }
+       #placed>div{
+        text-align: center;
+       }
     </style>
 </head>
 <body>
@@ -127,9 +188,40 @@
             <button class="redbtn">SIGN UP</button>
         </div>
     </nav>
+   <div id="contant">
+    <div id="prof">
+         <h1>Proof that dream do come true</h1>
+         <h2>A testament to what's possible</h2>
+         <button id="app"> APPLY NOW </button>
+    </div>
+    <div>
+        <video id="vid" controls>
+            <source src="video1900857855.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
    
+   </div>
+   <div id="foot">
+    <h1 >
+        How is Masai Creating an Impact?
+    </h1>
+    <h3>4000+ students place across 1000+ companies</h3>
+    
+   </div>
+   <div id="placed">
+    <div><h1>4000+</h1>
+         <h3>Hiring Partners</h3>
+    </div> 
+    <div><h1>6.7 LPA</h1>
+         <h3>Average CTC</h3>
+    </div>
+    <div><h1>6,000+</h1>
+         <h3>Currently Enrolled Student</h3>
+    </div>
+   </div>
 
-
+  
     
 </body>
 </html>
