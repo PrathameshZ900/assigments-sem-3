@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Builder</title>
+    <style>
+        body{
+            border-bottom: 0.5px solid rgb(216, 216, 216);
+        }
+          nav {
+            width: 80%;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 10px;
+            border-bottom:1px solid balck;
+            
+        }
+        
+        nav > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        
+        nav > div > img {
+            max-width: 100px; /* Adjust as needed */
+        }
+        
+        nav > div > #mainnav {
+            /* width: 10px; */
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 20px; /* Adjust as needed */
+        }
+        
+        nav > div > #mainnav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px; /* Adjust as needed */
+            padding-right: 20px;
+        }
+        
+        nav > div > button {
+            
+            padding: 8px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+       
+        .redbtn{
+            color: red;
+            border: 2px solid red;
+            background-color: #ffffff;
+            margin-left: 40px;
+
+        }
+        .redbtn:hover{
+            color: rgb(158, 255, 98);
+            border: 2px solid rgb(158, 255, 98);
+        }
+        button{
+            margin: 10px;
+            cursor:progress;
+        }
+      
+       
+        #mainnav>a:hover{
+            color: red; 
+            
+            
+        }
+        #ref{
+            color: rgb(110,113,204);
+            background: rgb(229,254,255);
+            border: 1px solid rgb(110,113,204);
+        }
+        #ref:hover{
+            color: rgb(255, 27, 27);
+            background: rgb(229,254,255);
+            border: 1px solid rgb(236, 59, 19);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="Masai">
+            <div id="mainnav" >
+                <a href="">COURSE</a>
+                <a href="">FEES & ISA</a>
+                <a href="">About Us</a>
+                <a href="">HIRE FROM US</a>
+                <a href="">FAQ</a>
+                <a href="">Events</a>
+            </div>
+            <button  id="ref">REFER & EARN</button>
+            <button class="redbtn">Log In</button>
+        </div>
+    </nav>
+</body>
+</html>
