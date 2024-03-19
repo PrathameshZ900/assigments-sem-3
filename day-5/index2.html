@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Grid Layout</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: rgb(131, 131, 131);
+            width: 70%;
+            margin: auto;
+            gap: 20px;
+            height: 600px;
+            padding: 40px;
+            grid-template-areas:
+                "one two three"
+                "one four five"
+                "six . .";
+        }
+
+        #main>div {
+            display: flex;
+            border: 3px solid black;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Center the text horizontally */
+        }
+
+        #one { grid-area: one; background-color: blue;}
+        #two { grid-area: two; background-color: green;}
+        #three { grid-area: three; background-color: yellow;}
+        #four { grid-area: four; background-color: orange;}
+        #five { grid-area: five; background-color: crimson;}
+        #six { grid-area: six; background-color: seashell;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="one" ><h1>1</h1></div>
+        <div id="two"><h1>2</h1></div>
+        <div id="three"><h1>3</h1></div>
+        <div id="four"><h1>4</h1></div>
+        <div id="five" ><h1>5</h1></div>
+        <div id="six" ><h1>6</h1></div>
+    </div>
+</body>
+</html>
