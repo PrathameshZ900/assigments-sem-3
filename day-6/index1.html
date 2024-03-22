@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #main {}
+
+        #s1>img {
+            width: 60%;
+        }
+
+        #s1 {
+            padding: 20px;
+            background-color: rgb(0, 7, 133);
+            color: rgb(255, 47, 82);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        #s2 {
+            color: antiquewhite;
+            background-color: rgb(65, 65, 198);
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #s3 {
+            display: flex;
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        #left {
+            display: flex;
+
+        }
+
+        #left>img {
+            width: 5%;
+
+        }
+
+        #right {
+            display: flex;
+            width: 70%;
+            font-size: 15px;
+            color: antiquewhite;
+            align-items: center;
+        }
+
+        #right>a {
+            font-size: 15px;
+            color: antiquewhite;
+            padding-left: 20px;
+
+        }
+
+        #main {
+            display: grid;
+            gap: 3px;
+            grid-template-areas:
+                "s1 s2 s2"
+                "s1 s2 s2"
+                "s3 s3 s3";
+            grid-template-columns: repeat(3, 1fr);
+            /* Add this line to define 4 columns */
+        }
+
+        #s1 {
+            grid-area: s1;
+        }
+
+        #s2 {
+            grid-area: s2;
+        }
+
+        #s3 {
+            grid-area: s3;
+        }
+
+        @media only screen and (max-width: 1000px) and (min-width: 540px) {
+            #main {
+                display: grid;
+                gap: 3px;
+                grid-template-areas:
+                    "s2 s2"
+                    "s1 s1"
+                    "s3 s3";
+                grid-template-columns: repeat(2, 1fr);
+                /* Add this line to define 4 columns */
+            }
+           
+
+        }
+
+        @media only screen and (max-width: 540px) {
+
+            #main {
+                display: grid;
+                gap: 3px;
+                grid-template-areas:
+                    "s3"
+                    "s2"
+                    "s1";
+                grid-template-columns: repeat(1, 1fr);
+                /* Add this line to define 4 columns */
+
+            }
+
+            #rright>a {
+                display: none;
+
+            }
+            #s2{
+                display:inline-block;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .s>p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="s1">
+            <img src="https://www.svgrepo.com/show/264242/lotus-flower.svg" alt>
+
+        </div>
+        <div id="s2">
+            <div class="s">
+                <h1>Shope</h1>
+                <p>Gifts Cards</p>
+                <p>Etsy Regestry</p>
+                <p>Sitemap</p>
+                <p>Esty Blog</p>
+                <p>Esty United Kingdom</p>
+                <p>Esty Germony</p>
+                <p>Esty India</p>
+            </div>
+
+            <div class="s">
+                <h1>Sell</h1>
+                <p>Sell Esty</p>
+                <p>Teams</p>
+                <p>Fourms</p>
+                <p>Affiletes & Creator</p>
+            </div>
+
+            <div class="s">
+                <h1>About</h1>
+                <p>Esty. Inc.</p>
+                <p>Politices</p>
+                <p>Investors</p>
+                <p>Creens</p>
+                <p>Press</p>
+                <p>Impact</p>
+                <p>Legaeal Imprtemnt</p>
+            </div>
+            <div class="s">
+                <h1>Shope</h1>
+                <p>Gifts Cards</p>
+                <p>Etsy Regestry</p>
+                <p>Sitemap</p>
+                <p>Esty Blog</p>
+                <p>Esty United Kingdom</p>
+                <p>Esty Germony</p>
+                <p>Esty India</p>
+            </div>
+        </div>
+        <div id="s3">
+
+            <div id="left">
+                <img src="https://www.svgrepo.com/show/405510/flag-for-flag-india.svg" alt>
+                <h2> | English(IN) | ₹(Inr)</h2>
+
+            </div>
+            <div id="right">
+                <h2>@2024Pratham.com</h2>
+                <a href="#">terms of use</a><a href="#">Privecy</a><a href="#">LocanShop</a><a href="#">regilon</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
