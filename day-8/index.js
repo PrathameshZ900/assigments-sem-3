@@ -21,6 +21,7 @@ console.log("Students Marks")
 console.log("▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ");
 console.log("Science:-",StdScience,"English:- ",StdEnglish, "Math:- ",StdMath);
 console.log("Total Marks Of ",StdName,":-",StdTotalMarks);
+console.log("Percentages:-", Math.floor(StdTotalMarks / 3))
 
 
 
