@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Ass-2</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0;
+        }
+        nav{
+            display: grid;
+            background-color:rgba(67, 76, 204, 1) ;
+            
+                
+
+
+        }
+        #nav{
+            color: rgba(255, 255, 255, 1);
+
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        #logo{
+            width:268px;
+            height:233px;
+            /* border: 1px solid red; */
+            text-align: end;
+            margin: 20px;
+            font-size:40px ;
+            grid-area: logo;
+        }
+        #opt{
+            /* border:2px solid red; */
+            width: 70%;
+        }
+        #navv{
+            text-align: right;
+            padding-left: 200px;
+            
+            width: 70%;
+            display:flex;
+            justify-content: space-evenly;
+
+            /* border: 2px solif green; */
+
+        }
+        #navv a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            padding-top: 10px;
+            /* padding-top: 48px; */
+        }
+        #navv button{
+            width:100px;
+            height:28px;
+            background-color:rgba(67, 76, 204, 1) ;
+            /* border: 1px solid violet; */
+            border: none;
+            color: rgba(255, 255, 255, 1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        #contact{
+            text-align: center;
+            width: 60%;
+            /* border:2px solid black; */
+        }
+        #contact>h1{
+            font-size: 72px;
+        }
+        #contact>p{
+            font-size: 20px;
+        }
+        main{
+            width:1170px;
+            height:540px;
+            margin-top: 18px;
+            margin-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("Bitmap.png");
+        }
+        main>img{
+           text-align: center;
+           padding: 10px;
+           border: 2px solid white;
+           border-radius: 50%;
+        }
+
+        #cnt{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+        }
+        #inputs>input{
+            background-color: white;
+            padding: 5px;
+            margin-top: 20px;
+            /* border: burlywood; */
+        }
+        #inputs>button{
+            background-color: rgba(67, 76, 204, 1);
+            color: aliceblue;
+        }
+        #info{
+            margin: auto;
+        }
+        #llg{
+            padding-top: 20px;
+            width: 70%;
+           
+            
+        } 
+        #llg>img{
+            width: 10%;
+            padding-left: 10px;
+        }
+          
+        #ok{
+            
+            margin: auto;
+            background-color: rgb(255, 230, 118);
+            display: flex;
+        }
+        #ok>div{
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+        #ok>div>h1{
+            font-size: 56px;
+            color: black;
+        }
+        #ok>div>input{
+         width: 230px;
+         height: 30px;
+         margin-top: 100px;
+         margin-left: 50px;
+        }
+        #ok>div>button{
+         width: 80px;
+         height: 30px;
+         display:flex ;
+         text-align: center;
+         margin-top: 100px;
+         margin-left: 20px;
+         background-color:rgba(67, 76, 204, 1) ;
+         color: aliceblue;
+         border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav">
+            <div id="logo">
+                LOGO
+            </div>
+            <div id="opt">
+                <div id="navv">
+                    <a href="">About</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                    <button>Sign Up</button>
+                </div>
+                <div id="contact">
+                        <h1>Contact</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+     
+
+    </nav>
+
+    <main>
+      <img src="Oval 39.png" alt="" >
+
+    </main>
+   
+
+    <footer>
+    <div id="cnt">
+        <div id="mess">
+        <form action="" id="inputs">
+        <h2>Message</h2>
+        <input type="text" placeholder="Please enter your name!" style="grid-area: name; display: block;">
+        <input type="email" placeholder="e-mail"  style="grid-area: email;  display: block;" >
+        <input type="" placeholder="Your message" style="grid-area: text;  display: block; align-items: center;" >
+        <button style="grid-area: submit;">Submit</button>
+        </form>
+        </div>
+        <div id="info">
+            <h2>Info</h2>
+            <div id="infos"><img src="Combined Shape.png" alt=""> 123 Dicunt Ancillae, Mea Homero Persequeris USA</div>
+            <div id="infos"><img src="Combined Shape (1).png" alt=""> 123-4567890123</div>
+            <div id="infos"><img src="Combined Shape (2).png" alt=""> info@gmail.com</div>
+            <div id="llg"><img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt=""><img src="https://www.svgrepo.com/show/475689/twitter-color.svg" alt=""><img src="https://www.svgrepo.com/show/349410/instagram.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div id="ok"><div>
+        <h1>Mea modus <br>volumus 
+            abhorreant</h1>
+        <input type="email" placeholder="enter your e-mail">
+        <button>submit</button> 
+    </div>
+           
+    </div>
+    </footer>
+</body>
+</html>
