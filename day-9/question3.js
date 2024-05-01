@@ -16,7 +16,7 @@ function isPrime(number) {
 function PrimeNumbers(number) {
     let ans = [];
     for(let i = 0; i <= number; i++){
-        if(isPrime(i)){
+        if(isPrime(i) !== true){
             ans.push(i);
         }
     }
@@ -25,7 +25,7 @@ function PrimeNumbers(number) {
 
 function checkPrimeNumber(input) {
     let number = parseInt(input);
-    console.log(`This are Prime Numbers Form 0 to ${number} :`,PrimeNumbers(number));
+    console.log(`This are Non-Prime Numbers Form 0 to ${number} :`,PrimeNumbers(number));
     
 }
 
