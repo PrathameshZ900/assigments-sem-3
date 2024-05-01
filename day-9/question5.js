@@ -1,5 +1,8 @@
+// Problem 5: Write a function to replace spaces in a given string with - .
+
+// statement : "The quick brown fox jumps over the lazy dog"
+
 function replace(string) {
-    // Convert the character to lowercase and compare it with the original character
     let ans = "";
     for(let i = 0; i < string.length; i++){
         if(string[i]===" "){

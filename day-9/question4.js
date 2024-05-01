@@ -1,3 +1,5 @@
+// Problem 4: Write a function to check if the char is a small case or not.
+
 function isLowerCase(char) {
     // Convert the character to lowercase and compare it with the original character
     return char === char.toLowerCase();

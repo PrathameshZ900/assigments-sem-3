@@ -1,3 +1,5 @@
+// Problem 2: Use the above function to print the Primes from 2 to a given limit
+
 function isPrime(number) {
     if (number <= 1) {
         return false;

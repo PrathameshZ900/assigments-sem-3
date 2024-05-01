@@ -1,3 +1,6 @@
+// Problem 1: Create a function to check if a number is Prime or Not
+
+
 function isPrime(number) {
     if (number <= 1) {
         return false;
