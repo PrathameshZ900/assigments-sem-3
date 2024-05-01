@@ -230,16 +230,24 @@ p>span{
     padding-right: 10px;
 }
 #id4{
-    display:block;
+    display:grid;
+    grid-template-columns: "h1 h2 h2 h2 h2 imgg"
+                           "p  p  p  p  p  p";
 
 }
-#one{
-    display: flex;
-    /* width: 640px; */
+#id4>h1{
+    grid-area: "h1";
 }
-#id4>#two{
-   background-color: rgb(43, 42, 42);
+#id4>h2{
+    grid-area: "h2";
 }
+#id4>img{
+    grid-area: "imgg";
+}
+#id4>p{
+    grid-area: "p";
+}
+
 
 /* Footer code of css */
 

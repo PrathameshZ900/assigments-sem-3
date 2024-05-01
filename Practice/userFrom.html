@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            padding: 100px;
+        }
+
+        form {
+            padding-top: 200px;
+            width: 50%;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form select {
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        form select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+            background-size: 20px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm" action="">
+        <input type="text" id="userName" placeholder="Enter Your Name">
+        <input type="number" id="userAge" placeholder="Enter Your Age">
+        <input type="number" id="userPhoneNumber" placeholder="Enter Your Contact Number">
+        <select name="" id="gender">
+            <option value="Male">Male</option>
+            <option value="FeMale">FeMale</option>
+            <option value="Other">Other</option>
+        </select>
+        <button id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            let userName = document.getElementById("userName").value;
+            let userAge = document.getElementById("userAge").value;
+            let userPhoneNumber = document.getElementById("userPhoneNumber").value;
+            let gender = document.getElementById("gender").value;
+
+            // Display values in the console
+            console.log("Name:", userName);
+            console.log("Age:", userAge);
+            console.log("Phone Number:", userPhoneNumber);
+            console.log("Gender:", gender);
+        });
+    </script>
+</body>
+</html>
