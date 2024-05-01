@@ -27,7 +27,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question("Enter a String to replace space with '-'.", (input) => {
+readline.question("Enter a String to replace space with '-': ", (input) => {
     checkPrimeNumber(input);
     readline.close();
 });

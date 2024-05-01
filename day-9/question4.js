@@ -20,7 +20,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question("Enter a number to check if it's prime: ", (input) => {
+readline.question("Enter a Character to check if it's LowerCase: ", (input) => {
     checkPrimeNumber(input);
     readline.close();
 });

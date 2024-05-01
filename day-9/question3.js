@@ -36,7 +36,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question("Enter a number to check if it's prime: ", (input) => {
+readline.question("Enter a number to check Non-Prime from 0 to given Number: ", (input) => {
     checkPrimeNumber(input);
     readline.close();
 });
