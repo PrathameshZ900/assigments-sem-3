@@ -10,27 +10,56 @@
     <h1 class="name">Jethalal Gada, Gada Electronics.!</h1>
     <button onclick="console.log(`Jetha ke Jabaj.`)">Babitajii</button> -->
 
-    <h1 id="num">0</h1>
+    <!-- <h1 id="num">0</h1>
     <button onclick="add()" id="+">+</button>
-    <button onclick="sub()" id="-">-</button>
+    <button onclick="sub()" id="-">-</button> -->
+
+    <h1 class="ok">hi I am Prathamesh</h1>
+    <h1 class="ok">hi I am ramesh</h1>
+    <button onclick="likeMe()">Like Me</button>
 
 </body>
 <script>
+
+    // Get Element My Id 
+
     // let names = document.getElementsByClassName("name");
     // for (let i = 0; i < names.length; i++) {
     //     console.log(names[i].innerText);
     // }
 
-    let num = document.getElementById("num");
-    // let plus = document.getElementById("+");
-    // let minus = document.getElementById("-");
+    // let num = document.getElementById("num");
+    // // let plus = document.getElementById("+");
+    // // let minus = document.getElementById("-");
 
-    function add(){
-        num.innerText =  +( num.innerText) + 1;
-    }
-    function sub(){
-        num.innerText = +(num.innerText) - 1;
-    }
+    // function add(){
+    //     num.innerText =  +( num.innerText) + 1;
+    // }
+    // function sub(){
+    //     num.innerText = +(num.innerText) - 1;
+    // }
+    
+
+    // Get element By Class name 
+    // let name = document.getElementsByClassName("ok");
+    // for(let i = 0; i < name.length; i++){
+    //     console.log(name[i].innerText);
+    // }
+    // name[1].style.backgroundColor = "red";
+    // name[1].style.fontSize="55px" 
+
+
+    // Get element by Query selectors
+    // let name = document.querySelectorAll(".ok");
+    // console.log(name[0].innerText); 
+
+
+    // let likeMe = function(){
+    //     console.log("They Liked Me!!!");
+    // }
+    
+    let tag = document.getElementsByTagName("h1");
+    console.log(tag[0].innerText);
 
 </script>
 </html>
