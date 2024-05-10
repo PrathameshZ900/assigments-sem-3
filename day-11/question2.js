@@ -37,7 +37,11 @@ const employees1 = [
    
 function averageSalary(employees1){
     // Destructure the salary property from each employee object and sum them using reduce
-    const totalSalary = employees1.reduce((total, { salary }) => total + salary, 0);
+    let totalSalary = 0;
+
+    for(let {salary:key} of employees1){
+      totalSalary += key;
+    }
 
     // Calculate the average salary
     const averageSalary = totalSalary / employees1.length;
