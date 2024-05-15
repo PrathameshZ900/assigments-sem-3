@@ -13,7 +13,18 @@ let double = arr.map(function (ele){
 })
 console.log(double);
 
+//Using arrow function 
 let double1 = arr.map((ele) => {
     return ele*2;
 })
 console.log(double1);
+ 
+
+
+// usnig map and higher order function 
+function doubleFunc(ele) {
+    return ele * 2;
+}
+
+let double2 = arr.map(doubleFunc);
+console.log(double2);
