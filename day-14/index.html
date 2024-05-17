@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .delete {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      .delete:hover {
+        background-color: #ff1a1a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added here dynamically -->
+      </tbody>
+    </table>
+    <script>
+      const products = [
+        {
+          id: 1,
+          title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          price: 109.95,
+          category: "men's clothing",
+        },
+        {
+          id: 2,
+          title: "Mens Casual Premium Slim Fit T-Shirts ",
+          price: 22.3,
+          category: "men's clothing",
+        },
+        {
+          id: 3,
+          title: "Mens Cotton Jacket",
+          price: 55.99,
+          category: "men's clothing",
+        },
+        {
+          id: 4,
+          title: "Mens Casual Slim Fit",
+          price: 15.99,
+          category: "men's clothing",
+        },
+        {
+          id: 5,
+          title:
+            "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          price: 695,
+          category: "jewelery",
+        },
+        {
+          id: 6,
+          title: "Solid Gold Petite Micropave ",
+          price: 168,
+          category: "jewelery",
+        },
+        {
+          id: 7,
+          title: "White Gold Plated Princess",
+          price: 9.99,
+          category: "jewelery",
+        },
+        {
+          id: 8,
+          title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
+          price: 10.99,
+          category: "jewelery",
+        },
+        {
+          id: 9,
+          title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+          price: 64,
+          category: "electronics",
+        },
+        {
+          id: 10,
+          title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+          price: 109,
+          category: "electronics",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tbody = document.querySelector("tbody");
+
+        products.forEach((product) => {
+          const row = document.createElement("tr");
+
+          row.innerHTML = `
+          <td>${product.id}</td>
+          <td>${product.title}</td>
+          <td>${product.price}</td>
+          <td>${product.category}</td>
+          <td><button class="delete">Delete</button></td>
+          `;
+
+          const deleteButton = row.querySelector(".delete");
+          deleteButton.addEventListener('click', function(){
+            row.remove()
+          })
+
+          tbody.append(row);
+        });
+      });
+    </script>
+  </body>
+</html>

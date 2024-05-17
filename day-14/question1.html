@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* CSS for the table */
+    body{
+      margin: auto;
+    }
+    table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 80px;
+
+    }
+
+    thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    thead tr th {
+        padding: 12px 15px;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    tbody tr td {
+        padding: 12px 15px;
+    }
+
+    tbody tr td button.delete {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody tr td button.delete:hover {
+        background-color: #ff1a1a;
+    }
+
+    /* Adding card-like appearance */
+    table {
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    thead tr {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    tbody tr:last-of-type {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+
+    </tbody>
+  </table>
+  
+</body>
+</html>
+
+<script>
+  let user = [
+  {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+  },
+  {
+    id: 2,
+    name: "Ervin Howell",
+    username: "Antonette",
+    email: "Shanna@melissa.tv",
+  },
+  {
+    id: 3,
+    name: "Clementine Bauch",
+    username: "Samantha",
+    email: "Nathan@yesenia.net",
+  },
+  {
+    id: 4,
+    name: "Patricia Lebsack",
+    username: "Karianne",
+    email: "Julianne.OConner@kory.org",
+  },
+  {
+    id: 5,
+    name: "Chelsey Dietrich",
+    username: "Kamren",
+    email: "Lucio_Hettinger@annie.ca",
+  },
+  {
+    id: 6,
+    name: "Mrs. Dennis Schulist",
+    username: "Leopoldo_Corkery",
+    email: "Karley_Dach@jasper.info",
+  },
+  {
+    id: 7,
+    name: "Kurtis Weissnat",
+    username: "Elwyn.Skiles",
+    email: "Telly.Hoeger@billy.biz",
+  },
+  {
+    id: 8,
+    name: "Nicholas Runolfsdottir V",
+    username: "Maxime_Nienow",
+    email: "Sherwood@rosamond.me",
+  },
+  {
+    id: 9,
+    name: "Glenna Reichert",
+    username: "Delphine",
+    email: "Chaim_McDermott@dana.io",
+  },
+  {
+    id: 10,
+    name: "Clementina DuBuque",
+    username: "Moriah.Stanton",
+    email: "Rey.Padberg@karina.biz",
+  },
+];
+
+{/* <td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><button class="delete">Delete</button></td> */}
+
+document.addEventListener("DOMContentLoaded",function(){
+  const tbody = document.getElementById("tbody");
+
+  user.forEach((users)=>{
+     const row = document.createElement("tr");
+     row.innerHTML = `<td> ${users.id} </td>
+                      <td>${users.name}</td>
+                      <td>${users.username}</td>
+                      <td>${users.email}</td>`;
+     tbody.append(row);                 
+  })
+})
+</script>
