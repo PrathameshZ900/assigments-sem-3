@@ -20,6 +20,7 @@
     }
     
      #data  > div > img{
+        object-fit:fill;
         width: 90%;
         height:300px;
         margin: auto;
@@ -388,8 +389,7 @@ let sort = document.getElementById("sort");
                 img.setAttribute("src", ele.image);
 
                 let rating = document.createElement("h3");
-                let random = (Math.random() * 4 + 1).toFixed(1);
-                rating.innerText = `Rating: ${ele.rating.rate} ⭐ | ${random}K`;
+                rating.innerText = `Rating: ${ele.rating.rate} ⭐ | ${ele.rating.count}K`;
 
                 let title = document.createElement("p");
                 title.innerText = ele.title;
