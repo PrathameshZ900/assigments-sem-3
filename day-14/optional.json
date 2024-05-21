@@ -1,0 +1,10 @@
+
+    {
+        "id": 1,
+        "model": "Lenovo A789",
+        "brand": "Lenovo",
+        "os": "Android 4.0.4",
+        "release_data": 2012,
+        "price": 17785,
+        "discount": 0.5
+    }
