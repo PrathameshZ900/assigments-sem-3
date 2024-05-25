@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" onsubmit="store(event)">
+    <h1>Name: <input type="text" id="name" ></h1>
+    <h1>Phone No: <input type="number" id="phoneNo"></h1>
+    <h1>Age: <input type="number" id="age"></h1>
+    <button type="submit" id="submit">Submit</button>
+</form>
+
+<script>
+    function store(event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        let nameElement = document.getElementById('name');
+        let ageElement = document.getElementById('age');
+        let phoneNoElement = document.getElementById('phoneNo');
+
+        if (nameElement && ageElement && phoneNoElement) {
+            localStorage.setItem('name', nameElement.value);
+            localStorage.setItem('age', ageElement.value);
+            localStorage.setItem('phoneNo', phoneNoElement.value);
+        }
+    }
+</script>
+</body>
+</html>
+
